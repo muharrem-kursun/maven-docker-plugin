@@ -16,3 +16,6 @@ komut aşağıdaki gibi çalışacak
 then
 localhost:8080/hello/message
 
+output
+Hello, World!!
+
