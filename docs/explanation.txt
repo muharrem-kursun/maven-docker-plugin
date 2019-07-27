@@ -1,0 +1,18 @@
+for docker image
+
+./mvn compile jib:dockerBuild
+
+then open docker and powershell
+write to the powershell
+docker container run -p 8080:9090 --name jib -d docker-jib-rest
+
+yukarıdaki komutun açıklaması iç  portu 9090 olan yani tomcat’in çalışacağı port dış portu 8080 olan  yani container’ın  çalışacağı port (-p 8080:9090)
+container adı jib olacak (--name jib)
+container docker’ın kendi içinde çalışacak (-d)
+image adı(docker- jib-rest)
+container’ı çalıştır (docker container run)
+komut aşağıdaki gibi çalışacak
+
+then
+localhost:8080/hello/message
+
